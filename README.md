@@ -9,7 +9,7 @@ Caesar Cipher Encryption/Decryption: Shifts characters in the file by a fixed nu
 Vigenère Cipher Encryption/Decryption: Uses a keyword to shift characters variably.
 Setup and Installation
 Clone the Repository:
-                git clone https://github.com/your_username/your_repository.git
+                git clone https://github.com/Chandan-I/encryptionDecryptionTool
 cd your_repository
 Compile the Code:
 
