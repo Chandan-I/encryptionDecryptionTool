@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Encryption & Decryption</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>File Encryption & Decryption Tool</h1>
+
+        <div class="form-group">
+            <label for="inputFile">Input File:</label>
+            <input type="file" id="inputFile" name="inputFile">
+        </div>
+
+        <div class="form-group">
+            <label for="outputFile">Output File Name:</label>
+            <input type="text" id="outputFile" name="outputFile">
+        </div>
+
+        <div class="form-group">
+            <label for="key">Key:</label>
+            <input type="text" id="key" name="key">
+        </div>
+
+        <div class="form-group">
+            <label>Select Operation:</label>
+            <div class="radio-group">
+                <table>
+                    <tr>
+                        <td><input type="radio" id="xorEncrypt" name="operation" value="xorEncrypt"></td>
+                        <td><label for="xorEncrypt">XOR Encryption</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="xorDecrypt" name="operation" value="xorDecrypt"></td>
+                        <td><label for="xorDecrypt">XOR Decryption</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="caesarEncrypt" name="operation" value="caesarEncrypt"></td>
+                        <td><label for="caesarEncrypt">Caesar Cipher Encryption</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="caesarDecrypt" name="operation" value="caesarDecrypt"></td>
+                        <td><label for="caesarDecrypt">Caesar Cipher Decryption</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="vigenereEncrypt" name="operation" value="vigenereEncrypt"></td>
+                        <td><label for="vigenereEncrypt">Vigenère Cipher Encryption</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="vigenereDecrypt" name="operation" value="vigenereDecrypt"></td>
+                        <td><label for="vigenereDecrypt">Vigenère Cipher Decryption</label></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="form-group center">
+            <button id="processButton">Process</button>
+        </div>
+
+        <div class="form-group center">
+            <a href="connect.html">Need Help?</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
